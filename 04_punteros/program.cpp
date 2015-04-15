@@ -5,16 +5,12 @@ using namespace std;
 int main(){
   
   /* int , char , bool, double, float */
-  
-  int x = 10;
-  int * apuntador = &x; 
 
-  cout << "Variable X: " << x << endl; 
-  cout << "Direccion de  X: " << apuntador << endl; 
-  apuntador = apuntador+1;
-  cout << "Direccion de  X: " << apuntador << endl;
-  char * palabra = "hola";
+  int * x; //32 bits - integer 4
+
+  *x = 5;
   
+  cout << "Valor :" << x << " - dentro: "<< *x << endl;
   
   return 0;
 }
